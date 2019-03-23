@@ -1,0 +1,24 @@
+//
+//  cheng,i.pch
+//  城觅
+//
+//  Created by Jason on 2019/3/14.
+//  Copyright © 2019 友邦创新资讯. All rights reserved.
+//
+#ifdef __OBJC__
+
+#import "UIImage+image.h"
+#import "UIColor+XQColor.h"
+#import "UIView+frame.h"
+//界面尺寸宏定义
+#define screen [UIScreen mainScreen].bounds
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+
+//通知宏定义
+#define openDragerNotification  @"openDrager"
+#define CITICHANGE @"CitiChange"
+
+#else
+//c语言
+#endif

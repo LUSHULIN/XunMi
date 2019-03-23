@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LD9-Hl-jlL" customClass="LSLLeftView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="YFc-kv-lrO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJc-sf-CDh" customClass="LSLButton">
+                    <rect key="frame" x="34" y="432" width="179" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="message"/>
+                    <state key="selected" image="messageSelected"/>
+                    <connections>
+                        <action selector="menuClick:" destination="LD9-Hl-jlL" eventType="touchUpInside" id="rnC-FI-UFg"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="sLI-dz-Q7t">
+                    <rect key="frame" x="0.0" y="395" width="359" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GP-Ha-NNn" customClass="LSLButton">
+                    <rect key="frame" x="27" y="336" width="194" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="weixin"/>
+                    <state key="highlighted" image="weixinH"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rl-C9-zZp" customClass="LSLButton">
+                    <rect key="frame" x="27" y="277" width="194" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="sina"/>
+                    <state key="highlighted" image="sinaH"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6N-hN-akb" customClass="LSLButton">
+                    <rect key="frame" x="23" y="217" width="179" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="unLogin"/>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8q7-Gu-HDb" customClass="LSLButton">
+                    <rect key="frame" x="31" y="137" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="found"/>
+                    <state key="selected" image="foundSelected"/>
+                    <connections>
+                        <action selector="menuClick:" destination="LD9-Hl-jlL" eventType="touchUpInside" id="o5m-sD-blr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nti-Tc-RFn" customClass="LSLCityBtn">
+                    <rect key="frame" x="31" y="36" width="158" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="城市" image="city_down"/>
+                    <connections>
+                        <action selector="citySelect:" destination="LD9-Hl-jlL" eventType="touchUpInside" id="mvZ-ej-s4c"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH7-W9-Rb6" customClass="LSLButton">
+                    <rect key="frame" x="31" y="82" width="185" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                    </accessibility>
+                    <state key="normal" image="home"/>
+                    <state key="selected" image="homeSeletced"/>
+                    <connections>
+                        <action selector="menuClick:" destination="LD9-Hl-jlL" eventType="touchUpInside" id="zJf-dl-gbt"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="MP7-Dg-1ue">
+                    <rect key="frame" x="8" y="191" width="359" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ca-aO-aY1" customClass="LSLButton">
+                    <rect key="frame" x="31" y="503" width="179" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="seting"/>
+                    <state key="selected" image="setingSelected"/>
+                    <connections>
+                        <action selector="menuClick:" destination="LD9-Hl-jlL" eventType="touchUpInside" id="4w6-Bi-Ezy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YFc-kv-lrO" firstAttribute="top" secondItem="LD9-Hl-jlL" secondAttribute="top" id="ANG-OI-CMY"/>
+                <constraint firstItem="Tus-E4-sMz" firstAttribute="bottom" secondItem="YFc-kv-lrO" secondAttribute="bottom" id="a6O-IJ-7hR"/>
+                <constraint firstItem="YFc-kv-lrO" firstAttribute="leading" secondItem="Tus-E4-sMz" secondAttribute="leading" id="jmh-kR-7eH"/>
+                <constraint firstItem="Tus-E4-sMz" firstAttribute="trailing" secondItem="YFc-kv-lrO" secondAttribute="trailing" id="tte-ve-BIk"/>
+            </constraints>
+            <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Tus-E4-sMz"/>
+            <connections>
+                <outlet property="citiButton" destination="nti-Tc-RFn" id="KXj-cU-qYh"/>
+                <outlet property="preSelectBtn" destination="vH7-W9-Rb6" id="Txe-1G-aEe"/>
+            </connections>
+            <point key="canvasLocation" x="397.60000000000002" y="-287.40629685157421"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgImage" width="97" height="93"/>
+        <image name="blackLine" width="258.5" height="24"/>
+        <image name="city_down" width="16" height="9"/>
+        <image name="found" width="185" height="54.5"/>
+        <image name="foundSelected" width="185" height="54.5"/>
+        <image name="home" width="185" height="54.5"/>
+        <image name="homeSeletced" width="185" height="54.5"/>
+        <image name="message" width="185" height="54.5"/>
+        <image name="messageSelected" width="185" height="54.5"/>
+        <image name="seting" width="185" height="54.5"/>
+        <image name="setingSelected" width="185" height="54.5"/>
+        <image name="sina" width="194" height="51.5"/>
+        <image name="sinaH" width="194" height="51.5"/>
+        <image name="unLogin" width="202.5" height="50"/>
+        <image name="weixin" width="194" height="51.5"/>
+        <image name="weixinH" width="194" height="51.5"/>
+    </resources>
+</document>
